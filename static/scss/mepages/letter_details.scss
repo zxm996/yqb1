@@ -1,0 +1,40 @@
+.content {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	.user_box {
+		display: flex;
+		padding: 30upx 0;
+		border-bottom: $border;
+		.user_info {
+			width: 70%;
+			display: flex;
+			.user_img {
+				width: 86upx;
+				height: 86upx;
+				border-radius: 50%;
+			}
+			.user_name {
+				font-size: 32upx;
+				color: $title-color;
+				letter-spacing: 1upx;
+				margin-left: 16upx;
+				line-height: 86upx;
+			}
+		}
+		.time {
+			width: 30%;
+			text-align: right;
+			font-size: 26upx;
+			color: $tips-color;
+			line-height: 86upx;
+		}
+	}
+	.context {
+		font-size: 32upx;
+		color: $title-color;
+		letter-spacing: 2upx;
+		line-height: 1.6;
+		margin: 30upx 0;
+	}
+}

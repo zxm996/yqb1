@@ -1,0 +1,27 @@
+.content {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	.textarea_box {
+		padding: 30upx 0;
+		.textarea {
+			width: calc(100% - 60upx);
+			height: 300upx;
+			background-color: $bg-color;
+			font-size: 32upx;
+			padding: 20upx 30upx;
+			color: $title-color;
+			border-radius: 12upx;
+		}
+	}
+	.replybtn {
+		margin-top: 20upx;
+		background-color: $btn-color;
+		color: #FFFFFF;
+		font-size: 32upx;
+		height: 90upx;
+		line-height: 90upx;
+		margin-top: 60upx;
+		letter-spacing: 4upx;
+	}
+}

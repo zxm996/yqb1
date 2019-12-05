@@ -1,0 +1,49 @@
+.content {
+	padding: 30upx 30upx;
+}
+.title {
+	font-size: 42upx;
+	color: $title-color;
+	// font-weight: bold;
+	// letter-spacing: 1upx;
+	line-height: 1.6;
+}
+
+.info_box {
+	display: flex;
+	margin-top: 20upx;
+	.author {
+		display: flex;
+		.userimg {
+			width: 50upx;
+			height: 50upx;
+			border-radius: 50%;
+		}
+		.author_name {
+			margin-left: 18upx;
+			font-size: 26upx;
+			color: $text-color;
+			line-height: 50upx;
+			letter-spacing: 1upx;
+		}
+	}
+	.push_time {
+		font-size: 26upx;
+		color: $text-color;
+		margin-left: 30upx;
+		line-height: 50upx;
+	}
+}
+
+.details {
+	.context {
+		margin-top: 30upx;
+		font-size: 36upx; 
+		color: $title-color;
+		line-height: 1.6;
+	}
+	.conimage {
+		margin-top: 30upx;
+		width: 100%;
+	}
+}

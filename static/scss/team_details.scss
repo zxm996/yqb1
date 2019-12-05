@@ -1,0 +1,150 @@
+.head_box {
+	width: calc(100% - 52upx);
+	padding: 30upx 26upx;
+	display: flex;
+	.logo {
+		width: 200upx;
+		height: 200upx;
+		border-radius: 10upx;
+		margin-right: 26upx;
+	}
+	.team_info {
+		width: calc(100% - 226upx);
+		.team_name {
+			font-size: 34upx;
+			color: $title-color;
+		}
+		.cap_box {
+			display: flex;
+			margin-top: 10upx;
+			.cap_img {
+				width: 50upx;
+				height: 50upx;
+				border-radius: 50%;
+			}
+			.cap_name {
+				font-size: 28upx;
+				color: $text-color;
+				line-height: 50upx;
+				margin-left: 12upx;
+			}
+			.label {
+				font-size: 22upx;
+				color: #FFFFFF;
+				background-color: $or-color;
+				border-radius: 12upx;
+				height: 34upx;
+				line-height: 34upx;
+				margin: 7upx 0; 
+				margin-left: 20upx;
+				padding: 0 20upx;
+			}
+		}
+		.money {
+			font-size: 26upx;
+			color: $theme-color;
+			margin-top: 10upx;
+		}
+		.textlist {
+			font-size: 24upx;
+			color: $text-color;
+			margin-top: 8upx;
+		}
+	}
+}
+
+.btn_box {
+	display: flex;
+	padding: 0 26upx;
+	.gobtn1 {
+		width: 50%;
+		height: 82upx;
+		line-height: 82upx;
+		color: #FFFFFF;
+		background-color: $btn-color;
+		letter-spacing: 2upx;
+		font-size: 30upx;
+		margin: 0;
+	}
+	.gobtn2 {
+		color: $tips-color;
+		background-color: #efefef;
+	}
+	.activitybtn {
+		width: 50%;
+		height: 82upx;
+		line-height: 82upx;
+		color: #FFFFFF;
+		background-color: $or-color;
+		letter-spacing: 2upx;
+		font-size: 30upx;
+		margin: 0;
+	}
+}
+
+.team_content {
+	margin-top: 40upx;
+	padding: 0 26upx;
+	.head {
+		height: 100upx;
+		border-bottom: 1upx solid $nobtn-color;
+		.title {
+			position: relative;
+			font-size: 32upx;
+			color: $btn-color;
+			letter-spacing: 2upx;
+			line-height: 100upx;
+			padding-left: 26upx;
+			.num {
+				color: $or-color;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width:  10upx;
+				height: 40upx;
+				background-color: $nobtn-color;
+				border-radius: 20upx;
+				margin: auto 0;
+			}
+		}
+	}
+	.team_text {
+		margin-top: 26upx;
+		font-size: 32upx;
+		color: $text-color;
+		line-height: 1.6;
+		letter-spacing: 2upx;
+	}
+	.member_list {
+		display: flex;
+		padding: 30upx 0;
+		border-bottom: $border;
+		.member_info {
+			width: 60%;
+			display: flex;
+			.image {
+				width: 80upx;
+				height: 80upx;
+				border-radius: 50%;
+			}
+			.name {
+				line-height: 80upx;
+				font-size: 32upx;
+				color: $title-color;
+				letter-spacing: 1upx;
+				margin-left: 20upx;
+			}
+		}
+		.member_time {
+			width: 40%;
+			text-align: right;
+			font-size: 26upx;
+			color: $tips-color;
+			line-height: 80upx;
+		}
+	}
+}

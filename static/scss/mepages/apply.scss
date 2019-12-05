@@ -1,0 +1,53 @@
+page {
+	// background-color: $bg-color;
+}
+.apply_list {
+	display: flex;
+	background-color: #FFFFFF;
+	&:last-child {
+		border-bottom: none;
+	}
+	.logo {
+		width: 86upx;
+		height: 86upx;
+		border-radius: 50%;
+		margin: 24upx 26upx;
+	} 
+	.apply_info {
+		width: calc(100% - 164upx);
+		padding: 24upx 0;
+		padding-right: 26upx;
+		border-bottom: $border;
+		.head {
+			display: flex;
+			.team_name {
+				width: 70%;
+				font-size: 30upx;
+				color: $title-color;
+				apply-spacing: 1upx;
+			}
+			.time {
+				width: 30%;
+				text-align: right;
+				font-size: 26upx;
+				color: $tips-color;
+			}
+		}
+		.state1 {
+			font-size: 28upx;
+			color: #4caf50;
+			letter-spacing: 1upx;
+			margin-top: 4upx;
+			.label {
+				color: $text-color;
+				margin-right: 14upx;
+			}
+		}
+		.state2 {
+			color: $red-color;
+		}
+		.state3 {
+			color: $or-color;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+page {
+	background-color: $bg-color;
+	padding-bottom: 110upx;
+}
+
+.user_box {
+	background-color: #FFFFFF;
+	padding: 30upx 26upx;
+	display: flex;
+	.user_image {
+		width: 200upx;
+		height: 200upx;
+		border-radius: 10upx;
+		margin-right: 26upx;
+	}
+	.user_info {
+		width: calc(100% - 226upx);
+		line-height: 50upx;
+		.user_name {
+			font-size: 34upx;
+			color: $title-color;
+			.label {
+				color: $text-color;
+			}
+		}
+		.user_list {
+			font-size: 30upx;
+			color: $title-color;
+			.label {
+				color: $text-color;
+			}
+		}
+	}
+}
+
+.details_box {
+	margin-top: 20upx;
+	background-color: #FFFFFF;
+	padding: 30upx 26upx;
+	.details_list {
+		display: flex;
+		padding: 20upx 0;
+		.label {
+			width: 26%;
+			font-size: 30upx;
+			color: $title-color;
+		}
+		.context {
+			width: 74%;
+			font-size: 30upx;
+			color: $text-color;
+		}
+	}
+}
+
+.btn_box {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: calc(100% - 52upx);
+	height: 110upx;
+	background-color: #FFFFFF;
+	display: flex;
+	padding: 0 26upx;
+	z-index: 9999;
+	.submitbtn {
+		width: 48%;
+		background-color: $btn-color;
+		color: #FFFFFF;
+		font-size: 30upx;
+		letter-spacing: 2upx;
+		height: 80upx;
+		line-height: 80upx;
+		margin: 15upx 0;
+	}
+	.delbtn {
+		width: 48%;
+		background-color: $red-color;
+		color: #FFFFFF;
+		font-size: 30upx;
+		letter-spacing: 2upx;
+		height: 80upx;
+		line-height: 80upx;
+		margin: 15upx 0;
+		margin-left: 4%;
+	}
+}

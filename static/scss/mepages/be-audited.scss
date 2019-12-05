@@ -1,0 +1,74 @@
+page {
+	// background-color: $bg-color;
+}
+.newlist{
+	display: flex;
+	background-color: #FFFFFF;
+	&:last-child {
+		border-bottom: none;			
+	}
+	.newlist-left{
+		.list-icon{
+			width: 86upx;
+			height: 86upx;
+			border-radius: 50%;
+			margin: 24upx 26upx;
+		}
+	}
+	.newlist-right{
+		width: calc(100% - 164upx);
+		padding: 24upx 0;
+		padding-right: 26upx;
+		border-bottom: $border;
+		.listone{
+			display: flex;
+			.user_name {
+				width: 70%;
+				font-size: 30upx;
+				color: $title-color;
+				letter-spacing: 1upx;
+			}
+			.time {
+				width: 30%;
+				text-align: right;
+				font-size: 26upx;
+				color: $tips-color;
+			}
+		}
+		.down_box {
+			display: flex;
+			margin-top: 4upx;
+			.listtwo{
+				width: 60%;
+				font-size: 26upx;
+				color: $text-color;
+				letter-spacing: 1upx;
+				margin-top: 6upx;
+				.label {
+					margin-right: 14upx;
+				}
+			}
+			.editbtn  {
+				width: 37%;
+				margin-left: 3%;
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 6upx;
+				.btn1 {
+					width: 50%;
+					height: 40upx;
+					line-height: 40upx;
+					font-size: 22upx;
+					color: #FFFFFF;
+					background-color: $btn-color;
+					margin: 0;
+					letter-spacing: 1upx;
+				}
+				.btn2 {
+					background-color: $red-color;
+				}
+			}
+		}
+	}
+}
+

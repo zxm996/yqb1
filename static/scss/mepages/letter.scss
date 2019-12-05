@@ -1,0 +1,58 @@
+page {
+	// background-color: $bg-color;
+}
+.letter_list {
+	display: flex;
+	background-color: #FFFFFF;
+	&:last-child {
+		border-bottom: none;
+	}
+	.user_img {
+		width: 86upx;
+		height: 86upx;
+		border-radius: 50%;
+		margin: 24upx 26upx;
+	}
+	.letter_info {
+		width: calc(100% - 164upx);
+		padding: 24upx 0;
+		padding-right: 26upx;
+		border-bottom: $border;
+		.head {
+			display: flex;
+			.user_name {
+				width: 70%;
+				font-size: 30upx;
+				color: $title-color;
+				letter-spacing: 1upx;
+			}
+			.time {
+				width: 30%;
+				text-align: right;
+				font-size: 26upx;
+				color: $tips-color;
+			}
+		}
+		.details {
+			display: flex;
+			position: relative;
+			.context {
+				width: 95%;
+				font-size: 28upx;
+				color: $text-color;
+				letter-spacing: 1upx;
+				margin-top: 4upx;
+			}
+			.dian {
+				position: absolute;
+				top: 20upx;
+				right: 0;
+				bottom: 0;
+				width: 16upx;
+				height: 16upx;
+				background-color: $red-color;
+				border-radius: 50%;
+			}
+		}
+	}
+}

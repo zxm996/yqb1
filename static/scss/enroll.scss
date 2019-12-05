@@ -1,0 +1,238 @@
+// 头部
+.head_box {
+	width: calc(100% - 52upx);
+	padding: 30upx 26upx;
+	display: flex;
+	.header-img {
+		width: 280upx;
+		height: 200upx;
+		border-radius: 10upx;
+		margin-right: 26upx;
+	}
+	.team_info {
+		width: calc(100% - 306upx);
+		.team_name {
+			font-size: 34upx;
+			color: $title-color;
+		}
+		.cap_box {
+			display: flex;
+			margin-top: 10upx;
+			.cap_img {
+				width: 50upx;
+				height: 50upx;
+				border-radius: 50%;
+			}
+			.cap_name {
+				font-size: 28upx;
+				color: $text-color;
+				line-height: 50upx;
+				margin-left: 12upx;
+			}
+			.label {
+				font-size: 22upx;
+				color: #FFFFFF;
+				background-color: $or-color;
+				border-radius: 12upx;
+				height: 34upx;
+				line-height: 34upx;
+				margin: 7upx 0; 
+				margin-left: 20upx;
+				padding: 0 20upx;
+			}
+		}
+		.money {
+			font-size: 26upx;
+			color: $theme-color;
+			margin-top: 10upx;
+		}
+		.textlist {
+			font-size: 24upx;
+			color: $text-color;
+			margin-top: 8upx;
+		}
+	}
+}
+
+.btn_box {
+	display: flex;
+	padding: 0 26upx;
+	.gobtn1 {
+		width: 100%;
+		height: 82upx;
+		line-height: 82upx;
+		color: #FFFFFF;
+		background-color: $btn-color;
+		letter-spacing: 2upx;
+		font-size: 30upx;
+		margin: 0;
+	}
+	.gobtn2 {
+		color: $tips-color;
+		background-color: #efefef;
+	}
+}
+
+.brief-box{
+	width: calc(100% - 52upx);
+	margin-top: 40upx;
+	padding:26upx 26upx;
+	.brief-title{
+		height: 100upx;
+		border-bottom: 1upx solid $nobtn-color;
+		.title {
+			position: relative;
+			font-size: 32upx;
+			color: $btn-color;
+			letter-spacing: 2upx;
+			line-height: 100upx;
+			padding-left: 26upx;
+			.num {
+				color: $or-color;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width:  10upx;
+				height: 40upx;
+				background-color: $nobtn-color;
+				border-radius: 20upx;
+				margin: auto 0;
+			}
+		}
+	}
+	.brief-details{
+		margin-top: 26upx;
+		font-size: 32upx;
+		color: $text-color;
+		line-height: 1.6;
+		letter-spacing: 2upx;
+	}
+	.participant-box{
+		margin: 50upx 0;
+		.participant-details{
+			width: 100%;
+			display: flex;
+			.user-img{
+				width: 70upx;
+				height: 70upx;
+				border-radius: 50%;
+			}
+			.details-right{
+				width: calc(100% - 96upx);
+				padding-left: 26upx;
+				.user-name{
+					font-size: 26upx;
+					color: $title-color;
+					margin-top: 2upx;
+					letter-spacing: 2upx;
+				}
+				.user-content{
+					font-size: 26upx;
+					margin-top: 6upx;
+					line-height: 1.4;
+					color: #444444;
+					letter-spacing: 2upx;
+				}
+			}
+		}
+		// 回复
+		.reply_list {
+			display: flex;
+			padding-left: 96upx;
+			margin-top: 30upx;
+			.reply_userimg {
+				width: 50upx;
+				height: 50upx;
+				border-radius: 50%;
+				margin-right: 16upx;
+			}
+			.reply_info {
+				width: calc(100% - 66upx);
+				.username {
+					font-size: 26upx;
+					color: $title-color;
+					letter-spacing: 2upx;
+					.text {
+						color: #999999;
+						margin: 0 14upx;
+					}
+				}
+				.reply_con {
+					font-size: 26upx;
+					line-height: 1.4;
+					color: #444444;
+					letter-spacing: 2upx;
+					margin-top: 2upx;
+				}
+			}
+		}
+	}
+}
+
+// textarea_model
+.textarea_model {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $model-bgcolor;
+	z-index: 999;
+	.textarea_content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: calc(100% - 52upx);
+		height: 270upx;
+		padding: 0 26upx;
+		background-color: #FFFFFF;
+		border-radius: 16upx 16upx 0 0;
+		z-index: 1000;
+		.textarea_box {
+			width: 100%;
+			border-bottom: $border;
+			.textarea {
+				background-color: #f7f7f7;
+				width: calc(100% - 28upx);
+				height: 110upx;
+				margin: 25upx 0;
+				border-radius: 10upx;
+				color: $title-color;
+				font-size: 30upx;
+				padding: 10upx 14upx;
+				letter-spacing: 2upx;
+			}
+		}
+		.edit_box {
+			display: flex;
+			height: 90upx;
+			.btn_box2 {
+				width: 100%;
+				display: flex;
+				justify-content: flex-end;
+				.plushbtn {
+					width: 120upx;
+					height: 56upx;
+					line-height: 56upx;
+					font-size: 28upx;
+					color: #FFFFFF;
+					letter-spacing: 4upx;
+					margin: 17upx 0;
+					background-color: $btn-color;
+					padding: 0;
+					border-radius: 50upx;
+					&::after {
+						border: none;
+					}
+				}
+				.plushbtn2 {
+					background-color: $nobtn-color;
+				}
+			}
+		}
+	}
+}

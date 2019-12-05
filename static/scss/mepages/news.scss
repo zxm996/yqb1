@@ -1,0 +1,85 @@
+.newlist{
+	position: relative;
+	height: 150upx;
+	display: flex;
+	.newlist-left{
+		.list-icon{
+			width: 84upx;
+			height: 84upx; 
+			display: block;
+			margin: 35upx 26upx;
+		}
+	}
+	.newlist-right{
+		width: calc(100% - 162upx);
+		display: block;
+		padding-right: 26upx;
+		border-bottom: $border;
+		margin-top: 26upx;
+		.listone{
+			display: flex;
+			.title {
+				width: 70%;
+				font-size: 30upx;
+				color:$title-color;
+				letter-spacing: 1upx;
+			}
+			.time {
+				width: 30%;
+				font-size: 26upx;
+				color: $tips-color;
+				text-align: right;
+			}
+		}
+		.listone2{
+			line-height: 80upx;
+			padding-left: 20upx;
+			font-size: 30upx;
+			color:$title-color;
+			text{
+				position: absolute;
+				right: 3%;
+				top: 1upx;
+				font-size: 28upx;
+				color: $text-color;
+			}
+		}
+		.list_details {
+			display: flex;
+			padding-top: 16upx;
+			.listtwo{
+				font-size: 28upx;
+				color: $text-color;
+				width: 80%;
+			}
+			.tipnum{
+				width: 20%;
+				display: flex;
+				justify-content: flex-end;
+				.num {
+					background-color: $red-color;
+					color: #FFFFFF;
+					font-size: 24upx;
+					width: 40upx;
+					height: 40upx;
+					line-height: 40upx;
+					border-radius: 50%;
+					text-align: center;
+				}
+			}
+			// .tipnum{
+			// 	width: 40upx;
+			// 	height: 40upx;
+			// 	line-height: 40upx;
+			// 	text-align: center;
+			// 	background-color: #df4347;
+			// 	font-size: 20upx;
+			// 	color: #FFFFFF;
+			// 	position: absolute;
+			// 	right: 42upx;
+			// 	bottom: 20upx;
+			// 	border-radius: 50%;
+			// }
+		}
+	}
+}

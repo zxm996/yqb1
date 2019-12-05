@@ -1,0 +1,87 @@
+page {
+	background-color: $bg-color;
+	padding-bottom: 120upx;
+}
+.user_info{
+	padding: 50upx 30upx;
+	display: flex;
+	background-color: #FFFFFF;
+	.user-img{
+		width: 130upx;
+		height: 130upx;
+		border-radius: 8upx;
+	}
+	.user-right{
+		width: calc(100% - 160upx);
+		padding-left: 30upx;
+		.user-name{
+			font-size: 46upx;
+			color: $title-color;
+		}
+		.user-sub{
+			font-size: 30upx;
+			color: #4a4a4a;
+			margin-top: 15upx;
+		}
+	}
+}
+.state{
+	display: flex;
+	padding: 0 30upx 20upx;
+	background-color: #FFFFFF;
+	.statelist{
+		width: 50%;
+		padding: 20upx 0;
+		text-align: center;
+		.stateimgurl{
+			width: 50upx;
+			height: 50upx;
+		}
+		.statetitle{
+			font-size: 28upx;
+			color: $text-color;
+			margin-top: 8upx;
+		}
+	}
+	.lab{
+		margin-left: 2%;
+	}
+}
+.list_box{
+	background-color: #FFFFFF;
+	margin-top: 26upx;
+	.list-info{
+		width: 100%;
+		height: 110upx;
+		line-height: 110upx;
+		display: flex;
+		.listimg{
+			width: 50upx;
+			height: 50upx;
+			margin: 30upx 30upx;
+		}
+		.label_box {
+			width: calc(100% - 110upx);
+			display: flex;
+			.label{
+				width: 70%;
+				font-size: 30upx;
+				color: $text-color;
+				letter-spacing: 2upx;
+			}
+			.righticon {
+				width: 30%;
+				display: flex;
+				justify-content: flex-end;
+				.icon {
+					width: 50upx;
+					height: 50upx;
+					margin: 30upx 0;
+				}
+			}
+		}
+		.bottombor{
+			border-bottom: $border;
+		}
+	}
+}

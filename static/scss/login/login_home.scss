@@ -1,0 +1,117 @@
+.look_box {
+	padding: 0 50upx;
+	height: 80upx;
+	line-height: 80upx;
+	display: flex;
+	justify-content: flex-end;
+	.lookbtn{
+		font-size: 30upx;
+		color: $theme-color;
+		letter-spacing: 2upx;
+	}
+}
+
+.logo_box {
+	margin-top: 10upx;
+	.logoimg {
+		width: 180upx;
+		height: 180upx;
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.content {
+	padding: 0 80upx;
+	margin-top: 50upx;
+	.input_list {
+		display: flex;
+		height: 100upx;
+		border-bottom: $border;
+		margin-top: 20upx;
+		.icon {
+			width: 12%;
+			.img {
+				width: 46upx;
+				height: 46upx;
+				display: block;
+				margin: 27upx auto;
+			}
+		}
+		.input_box {
+			width: 86%;
+			margin-left: 2%;
+			.input {
+				width: 100%;
+				height: 100upx;
+				line-height: 100upx;
+				font-size: 30upx;
+				color: $title-color;
+			}
+		}
+	}
+	.loginbtn {
+		background-color: $btn-color;
+		color: #FFFFFF;
+		font-size: 34upx;
+		letter-spacing: 6upx;
+		height: 90upx;
+		line-height: 90upx;
+		margin-top: 60upx;
+	}
+	.tip_box {
+		display: flex;
+		margin-top: 30upx;
+		.tips {
+			width: 50%;
+			text-align: center;
+			font-size: 30upx;
+			color: $theme-color;
+			letter-spacing: 1upx;
+		}
+	}
+	.other_box {
+		padding: 100upx 0 30upx ;
+		.title {
+			position: relative;
+			text-align: center;
+			font-size: 30upx;
+			color: $text-color;
+			letter-spacing: 2upx;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 30upx;
+				margin: auto 0;
+				width: 150upx;
+				height: 2upx;
+				background-color: $text-color;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 30upx;
+				margin: auto 0;
+				width: 150upx;
+				height: 2upx;
+				background-color: $tips-color;
+			}
+		}
+		.login_other {
+			display: flex;
+			justify-content: center;
+			margin-top: 90upx;
+			.icon {
+				width: 100upx;
+				height: 100upx;
+				border-radius: 50%;
+				margin: 0 30upx;
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+
+.system {
+	margin-top: 60upx;
+	.time_box {
+		display: flex;
+		justify-content: center;
+		.time {
+			font-size: 30upx;
+			background-color: rgba(0,0,0,0.2);
+			color: #FFFFFF;
+			padding: 10upx 20upx;
+			border-radius: 20upx;
+		}
+	}
+	.system_list {
+		position: relative; 
+		width: 82%;
+		padding: 30upx 24upx;
+		box-shadow: 0 0 13upx rgba(0,0,0,0.1);
+		display: block;
+		margin: 0 auto;
+		margin-top: 30upx;
+		border-radius: 16upx;
+		.title {
+			font-size: 34upx;
+			font-weight: bold;
+			letter-spacing: 2upx;
+			color: $title-color;
+		}
+		.context {
+			margin-top: 26upx;
+			font-size: 30upx;
+			color: #4a4a4a;
+			letter-spacing: 2upx;
+			line-height: 1.6;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+		}
+		.dian {
+			width: 16upx;
+			height: 16upx;
+			background-color: $red-color;
+			border-radius: 50%;
+			position: absolute;
+			top: 44upx;
+			right: 40upx;
+		}
+	}
+}
